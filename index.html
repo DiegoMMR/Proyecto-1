@@ -11,7 +11,27 @@
     <script src="assets/js/bootstrap.bundle.js"></script>
     <!--fontawesome icons https://fontawesome.com/icons -->
     <link rel="stylesheet" href="assets/icons/fontawesome/css/all.css" >
-    
+
+    <style>
+		ul, li{
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			cursor: pointer;
+		}
+		section#cart ul{
+            max-height: 400px;		
+			overflow: auto;
+			background-color: #e0e0e0;
+		}
+
+        #listParoductos li{
+            float: left;
+            position: relative;
+        }
+	</style>
+    <script src="src/carrito.js"></script>
+
     <title>Proyecto 1</title>
 </head>
 <body>
@@ -24,13 +44,58 @@
         <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
     </ul>
+
+    
+    <div id="page">	
+              <div class="row">
+                    <div class="col-10"><label for=""></label></div>
+                    <div class="col-2">
+                        <div id="shopCart" class="dropdown">
+                            <a class="btn btn-warning dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <section id="cart" class="shopping-cart">
+                                    <ul>
+                                    </ul>
+                                    <span>Total: Q. </span>
+                                    <span class="total">0.00</span>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+           
+            
+		<section id="products" class="products">
+            <h1>Productos</h1>
+            <div class="card" style="width: 50%;">
+                <ul class="list-group list-group-flush">
+                    <!-- aca se listan los productos y se les agregan sus propiedades de precio y nombre para ser usadas en carrito.js -->
+                    <li class="list-group-item" id="product-1"  data-name="Camisa" data-price="2.00" data-toggle="tooltip" title="Precio Q. 2.00">
+                        <img src="assets/img/camisa.jpg" alt="" height="10%" width="10%">
+                        <span>Camisa</span>
+                    </li>
+
+                    <li class="list-group-item" id="product-2"  data-name="Computadora" data-price="2.00" data-toggle="tooltip" title="Precio Q. 2.00">
+                        <img src="assets/img/pc.jpg" alt="" height="15%" width="15%">
+                        <span>Computadora</span>
+                    </li>
+                    <li class="list-group-item" id="product-3"  data-name="Camisa 2" data-price="35.00" data-toggle="tooltip" title="Precio Q. 35.00">
+                        <img src="assets/img/camisa.jpg" alt="" height="10%" width="10%">
+                        <span>Camisa 2</span>
+                    </li>
+
+                    <li class="list-group-item" id="product-4"  data-name="Computadora 2" data-price="25.00" data-toggle="tooltip" title="Precio Q. 25.00">
+                        <img src="assets/img/pc.jpg" alt="" height="15%" width="15%">
+                        <span>Computadora 2</span>
+                    </li>
+                </ul>
+            </div>
+		</section>
+	</div> 	
     
     <!--<script src="src/main.js"></script>-->
 </body>
