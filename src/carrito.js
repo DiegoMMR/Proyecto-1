@@ -5,6 +5,10 @@
             element.addEventListener(event, delegate, false);
     }
 
+    function errorHandler(transaction, error) {
+        alert("SQL error: " + error.message);  //// validacion WEBSQL es funcional en nuestro navegador
+    }
+
     addEvent(document, 'readystatechange', function() {
         if ( document.readyState !== "complete" ) 
             return true;
@@ -25,9 +29,11 @@
                 var name = cart_item.getAttribute('data-name');
                 var price = cart_item.getAttribute('data-price');
                 var imagen = cart_item.getAttribute('imagen');
+                var id = cart_item.getAttribute('id_item');
 
                 //guarda los datos locales para poder usarlos despues
                 producto = {
+                    id: id,
                     name: name,
                     price: price,
                     quantity: quantity,

@@ -60,6 +60,7 @@
                 <div id="shopCart" class="dropleft float-right">
                     <a class="btn btn-warning dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-shopping-cart fa-2x"></i>
+                        <span class="badge" id="cartQuantity"></span>
                     </a>
                     
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="width: 300px">
@@ -77,23 +78,28 @@
                 <div class="card">
                     <ul class="list-group list-group-flush">
                         <!-- aca se listan los productos y se les agregan sus propiedades de precio y nombre para ser usadas en carrito.js -->
-                        <li class="list-group-item" id="product-1" imagen="assets/img/1.jpg"  data-name="Sueter" data-price="2.00" data-toggle="tooltip" title="Precio Q. 2.00">
+                        <li class="list-group-item" id="producto1" id_item="1" imagen="assets/img/1.jpg"  data-name="Sueter" data-price="50.5" data-toggle="tooltip" title="Precio Q. 2.00">
                             <img src="assets/img/1.jpg" alt="" width="10%">
                             <span>Sueter</span>
                         </li>
                         
-                        <li class="list-group-item" id="product-2" imagen="assets/img/2.jpg" data-name="Accesorio Canino" data-price="2.00" data-toggle="tooltip" title="Precio Q. 2.00">
+                        <li class="list-group-item" id="producto12" id_item="2" imagen="assets/img/2.jpg" data-name="Accesorio Canino" data-price="25.0" data-toggle="tooltip" title="Precio Q. 2.00">
                             <img src="assets/img/2.jpg" alt=""  width="10%">
                             <span>Accesorio Canino</span>
                         </li>
-                        <li class="list-group-item" id="product-3" imagen="assets/img/3.jpg" data-name="Sueter Perro" data-price="35.00" data-toggle="tooltip" title="Precio Q. 35.00">
+                        <li class="list-group-item" id="producto13" id_item="3" imagen="assets/img/3.jpg" data-name="Sueter Perro" data-price="30.0" data-toggle="tooltip" title="Precio Q. 35.00">
                             <img src="assets/img/3.jpg" alt=""  width="10%">
                             <span>Sueter Perro</span>
                         </li>
                         
-                        <li class="list-group-item" id="product-4" imagen="assets/img/4.jpg" data-name="Camisa" data-price="25.00" data-toggle="tooltip" title="Precio Q. 25.00">
+                        <li class="list-group-item" id="producto14" id_item="4" imagen="assets/img/4.jpg" data-name="Camisa" data-price="25.0" data-toggle="tooltip" title="Precio Q. 25.00">
                             <img src="assets/img/4.jpg" alt=""  width="10%">
                             <span>Camisa</span>
+                        </li>
+
+                        <li class="list-group-item" id="producto15" id_item="5" imagen="assets/img/5.jpg" data-name="Camisa" data-price="45.5" data-toggle="tooltip" title="Precio Q. 25.00">
+                            <img src="assets/img/5.jpg" alt=""  width="10%">
+                            <span>Sudadera</span>
                         </li>
                     </ul>
                 </div>
@@ -101,9 +107,56 @@
 		</section>
     </div> 	
     
-    <div id="products_cart" style="display: none">
-        <div id="ultimo_carrito">
-
+    <div id="products_cart" style="display: none" class="container">
+        
+        <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <h4>Cart</h4>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="panel-body">
+                                <div id="ultimo_carrito">        
+                                    <!--CART ITEMS APPEAR HERE-->        
+                                </div>
+        
+                            </div>
+        
+                            <div class="panel-footer">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="float-right">
+                                            <table class="table">
+                                                <tr>
+                                                    <td class="text-right">
+                                                        <h4>Subtotal</h4>
+                                                        <h4>Tax-Impuesto</h4>
+                                                        <h4>Total</h4>
+                                                    </td>
+                                                    <td>
+                                                        <h4 id="subtotal"><!--SUBTOTAL SE MUESTRA AQUI--></h4>
+                                                        <h4 id="tax"><!--IMPUESTO SE MUESTRA AQUI--></h4>
+                                                        <h4 id="total"><!--TOTAL SE MUESTRA AQUI--></h4>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <input type="button" value="Check Out" onclick = "location='thanks.html'"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
         </div>
     </div>
     
