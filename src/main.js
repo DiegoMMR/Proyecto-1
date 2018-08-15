@@ -196,10 +196,6 @@ function getCart() {
 		    $("#ultimo_carrito").empty();
 		    $("#ultimo_carrito").append(code);
 
-		    if (quantity > 0) {
-		        $("#cartQuantity").html(quantity);
-		    }
-
 		    $("#subtotal").html("Q" + subtotal.toFixed(2));
 		    $("#tax").html("Q" + tax.toFixed(2));
 		    $("#total").html("Q" +total.toFixed(2));
