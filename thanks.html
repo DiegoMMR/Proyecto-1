@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Boostrap https://getbootstrap.com/docs/4.1/layout/overview/ -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" >
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <!--fontawesome icons https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="assets/icons/fontawesome/css/all.css" >
+
+    <style>
+		ul, li{
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			cursor: pointer;
+		}
+		section#cart ul{
+            max-height: 400px;		
+			overflow: auto;
+			background-color: #e0e0e0;
+		}
+
+        #listParoductos li{
+            float: left;
+            position: relative;
+        }
+	</style>
+    <script src="src/main.js"></script>
+    <script src="src/carrito.js"></script>
+
+    <title>Proyecto 1</title>
+</head>
+<body>
+    <a class="btn btn-warning " href="index.html"> <i class="fas fa-long-arrow-alt-left"></i> Regresar  </a>
+    <div class="text-center">
+            
+        <h3>Gracias por su compra</h3>
+        Simulacion terminada <b>"Dar clicl en Inicio"</b><br>
+        Promociones 2018 
+        
+    </div>
+    
+
+
+    
+        <!--Page Content-->
+        <div class="container">
+            <div class="row">
+                <div class="row carousel-holder">
+                    <div class="col-lg-10 offset-md-1">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active carousel-item">
+                                    <img class="slide-image" src="assets/promos/1.jpg" alt="Promo 1">
+                                </div>
+                                <div class="item carousel-item">
+                                    <img class="slide-image" src="assets/promos/2.jpg" alt="Promo 2">
+                                </div>
+                                <div class="item carousel-item">
+                                    <img class="slide-image" src="assets/promos/4.jpg" alt="Promo 3">
+                                </div>
+                            </div> <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        
+                                <i class="fas fa-backward fa-2x"></i>
+        
+                                    </a>
+         <a class="right carousel-control" href="#carousel-example-generic"
+                            data-slide="next">
+        
+                            <i class="fas fa-forward fa-2x"></i>
+        
+                                    </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    
+    
+    <!--<script src="src/main.js"></script>-->
+</body>
+</html>
