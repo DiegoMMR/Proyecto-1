@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Boostrap https://getbootstrap.com/docs/4.1/layout/overview/ -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" >
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <!--fontawesome icons https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="assets/icons/fontawesome/css/all.css" >
+
+    <h2>Bienvenidos a TKYO & D Shopping Store</h2>
+    <p>
+        Bienvenidos a la primera version, de nuestra Online Store realizada en WebSQL, JavaScript, HTML5, jQuery & CSS
+    </p>
+
+    <style>
+		ul, li{
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			cursor: pointer;
+		}
+		section#cart ul{
+            max-height: 400px;		
+			overflow: auto;
+			background-color: #e0e0e0;
+		}
+
+        #listParoductos li{
+            float: left;
+            position: relative;
+        }
+	</style>
+    <script src="src/main.js"></script>
+    <script src="src/carrito.js"></script>
+
+    <title>Proyecto 1</title>
+</head>
+<body>
+    <a class="btn btn-warning " href="index.html"> <i class="fas fa-long-arrow-alt-right"></i> Ir a Tienda  </a>
+    <div class="text-center">
+       
+        
+        <div class="text-center">
+            <h3>Proyecto 1</h3>
+            Diego Mauricio Mendez Rivera <b>0900-15-10590</b><br>
+            Kevin Jose Arreola <b>0900-13-19765</b><br>
+            Alajandro Toledo Silvestre <b>0900-15-6022</b><br>
+        </div>
+        
+    </div>
+    
+
+
+    
+        <!--Page Content-->
+        <div class="container">
+            <div class="row">
+                <div class="row carousel-holder">
+                    <div class="col-lg-10 offset-md-1">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active carousel-item">
+                                    <img class="slide-image" src="assets/promos/1.jpg" alt="Promo 1">
+                                </div>
+                                <div class="item carousel-item">
+                                    <img class="slide-image" src="assets/promos/2.jpg" alt="Promo 2">
+                                </div>
+                                <div class="item carousel-item">
+                                    <img class="slide-image" src="assets/promos/4.jpg" alt="Promo 3">
+                                </div>
+                            </div> <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        
+                                <i class="fas fa-backward fa-2x"></i>
+        
+                                    </a>
+         <a class="right carousel-control" href="#carousel-example-generic"
+                            data-slide="next">
+        
+                            <i class="fas fa-forward fa-2x"></i>
+        
+                                    </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+            <hr>
+    
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>VER 1.0.0.1 &copy; UMG 2018 / WEB DEVELOPMENT</p>
+                    </div>
+                </div>
+            </footer>
+    
+
+    
+    
+    <!--<script src="src/main.js"></script>-->
+</body>
+</html>
