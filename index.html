@@ -36,6 +36,11 @@
     <title>Proyecto 1</title>
 </head>
 <body>
+
+    <div class="text-center">
+        <h3>Proyecto 1</h3>
+        Diego Mauricio Mendez Rivera <b>0900-15-10590</b><br>
+    </div>
     
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" >
@@ -54,7 +59,7 @@
             <h1>Productos
                 <div id="shopCart" class="dropleft float-right">
                     <a class="btn btn-warning dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-shopping-cart fa-2x"></i>
                     </a>
                     
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="width: 300px">
@@ -72,23 +77,23 @@
                 <div class="card">
                     <ul class="list-group list-group-flush">
                         <!-- aca se listan los productos y se les agregan sus propiedades de precio y nombre para ser usadas en carrito.js -->
-                        <li class="list-group-item" id="product-1"  data-name="Camisa" data-price="2.00" data-toggle="tooltip" title="Precio Q. 2.00">
-                            <img src="assets/img/camisa.jpg" alt="" height="100%" width="10%">
+                        <li class="list-group-item" id="product-1" imagen="assets/img/1.jpg"  data-name="Sueter" data-price="2.00" data-toggle="tooltip" title="Precio Q. 2.00">
+                            <img src="assets/img/1.jpg" alt="" width="10%">
+                            <span>Sueter</span>
+                        </li>
+                        
+                        <li class="list-group-item" id="product-2" imagen="assets/img/2.jpg" data-name="Accesorio Canino" data-price="2.00" data-toggle="tooltip" title="Precio Q. 2.00">
+                            <img src="assets/img/2.jpg" alt=""  width="10%">
+                            <span>Accesorio Canino</span>
+                        </li>
+                        <li class="list-group-item" id="product-3" imagen="assets/img/3.jpg" data-name="Sueter Perro" data-price="35.00" data-toggle="tooltip" title="Precio Q. 35.00">
+                            <img src="assets/img/3.jpg" alt=""  width="10%">
+                            <span>Sueter Perro</span>
+                        </li>
+                        
+                        <li class="list-group-item" id="product-4" imagen="assets/img/4.jpg" data-name="Camisa" data-price="25.00" data-toggle="tooltip" title="Precio Q. 25.00">
+                            <img src="assets/img/4.jpg" alt=""  width="10%">
                             <span>Camisa</span>
-                        </li>
-                        
-                        <li class="list-group-item" id="product-2"  data-name="Computadora" data-price="2.00" data-toggle="tooltip" title="Precio Q. 2.00">
-                            <img src="assets/img/pc.jpg" alt="" height="100%" width="15%">
-                            <span>Computadora</span>
-                        </li>
-                        <li class="list-group-item" id="product-3"  data-name="Camisa 2" data-price="35.00" data-toggle="tooltip" title="Precio Q. 35.00">
-                            <img src="assets/img/camisa.jpg" alt="" height="100%" width="10%">
-                            <span>Camisa 2</span>
-                        </li>
-                        
-                        <li class="list-group-item" id="product-4"  data-name="Computadora 2" data-price="25.00" data-toggle="tooltip" title="Precio Q. 25.00">
-                            <img src="assets/img/pc.jpg" alt="" height="100%" width="15%">
-                            <span>Computadora 2</span>
                         </li>
                     </ul>
                 </div>
@@ -97,7 +102,9 @@
     </div> 	
     
     <div id="products_cart" style="display: none">
-        hola
+        <div id="ultimo_carrito">
+
+        </div>
     </div>
     
     <!--<script src="src/main.js"></script>-->

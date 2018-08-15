@@ -24,12 +24,14 @@
                 var quantity = cart_item.getAttribute('data-quantity');
                 var name = cart_item.getAttribute('data-name');
                 var price = cart_item.getAttribute('data-price');
+                var imagen = cart_item.getAttribute('imagen');
 
                 //guarda los datos locales para poder usarlos despues
                 producto = {
                     name: name,
                     price: price,
                     quantity: quantity,
+                    imagen: imagen
                 };
                 localStorage.setItem(i, JSON.stringify(producto));
                 
@@ -46,6 +48,7 @@
         }
         
         function addCartItem(item, id) {
+            localStorage.clear();
             var clone = item.cloneNode(true);
             clone.setAttribute('data-id', id);
             clone.setAttribute('data-quantity', 1);
